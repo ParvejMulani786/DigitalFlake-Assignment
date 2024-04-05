@@ -25,7 +25,7 @@ export default function ForgotPassword() {
           <form className='py-1' onSubmit={formik.handleSubmit}>
             <div className='profile flex justify-center mb-4'>
               <h2 className='text-xl text-center text-purple-900 font-bold'>
-                Did you forget your password?
+                Recovery
               </h2>
             </div>
             <div className="title py-3 flex justify-center">

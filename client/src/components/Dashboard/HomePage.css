@@ -1,0 +1,10 @@
+/* Define styles to make content horizontally centered */
+
+
+.item{
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+
+  

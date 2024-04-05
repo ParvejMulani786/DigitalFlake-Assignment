@@ -1,27 +1,77 @@
-.glass{
-    /* height: 150px; */
+.appBg{
+  background: #dcdce6;
+  background-image: url('../assets//back1.png');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.glass {
     background: rgb(250, 250, 250);
     border-radius: 16px;
-    /* box-shadow: 0 4px 30px #4747470b; */
     backdrop-filter: blur(7.1px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    @apply border-4 border-gray-50 shrink-0 h-5/6 max-h-screen w-[35%]  py-3 px-10 min-w-max;
-}
-
-.profile_img{
-    @apply   w-[150px]   cursor-pointer;
-    
-}
-
-.textbox{
-    @apply  border mt-1 mb-4 w-full px-3 py-2 rounded-lg shadow-sm text-base;
-    @apply focus:outline-none;
-}
-
-.btn{
-    @apply border mt-6 bg-purple-900 w-full py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center;
-}
-
-.btn:hover{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* @apply border-4 border-gray-50 shrink-0  w-[35%]  py-3 px-10 min-w-max; */
+  }
+  
+  .profile_img {
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .textbox {
+    padding: 2px;
+    border: 1px solid #838488; /* Adjust border color */
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    color: rgb(250, 250, 247);
     background-color: #6509b1;
-}
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .btn:hover {
+    background-color: #7d04e0;
+  }
+
+  .error_msg{
+    color:red;
+  }
+  /* Responsive Classes */
+  @media (min-width: 640px) {
+    .glass {
+      width: 40%;
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .glass {
+      min-width: 300px; /* Adjust min-width as needed */
+      max-width: 450px; /* Adjust max-width as needed */
+      padding: 20px; /* Adjust padding as needed */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .glass {
+      padding: 30px; /* Adjust padding as needed */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .glass {
+      padding: 40px; /* Adjust padding as needed */
+    }
+  }
+  
+  /* Other responsive adjustments as needed */
+  
