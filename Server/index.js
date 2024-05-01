@@ -3,8 +3,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const connection = require('./db');
-const userRoutes = require('./routes/users');
-const authRoutes = require('./routes/auth');
+const registerRoutes = require('./routes/users');
+const loginRoutes = require('./routes/auth');
+const addCategory = require('./routes/category');
 
 //database connection
 connection();
@@ -14,8 +15,10 @@ app.use(express.json());
 app.use(cors());
 
 //routes
-app.use("/api/users", userRoutes);
-app.use("/api/auth", authRoutes);
+app.use("/api/users", registerRoutes);
+app.use("/api/auth", loginRoutes);
+app.use("/api/category/", addCategory);
+
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Server connected to http://localhost:${port}`))

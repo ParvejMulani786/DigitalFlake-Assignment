@@ -49,7 +49,7 @@ export default function Login() {
   return (
     <div className={styles.appBg}>
       <Toaster position='top-center' reverseOrder={false} />
-      <div className='back mt-12 flex justify-center items-center h-screen'>
+      <div className='back flex justify-center items-center h-screen'>
         <div className={styles.glass}>
           <form className='py-1' onSubmit={formik.handleSubmit}>
             <div className='profile flex justify-center'>
